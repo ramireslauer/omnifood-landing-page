@@ -15,29 +15,70 @@ body {
   color: #555;
 }
 
-/* hero section */
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
 
+  height: 9.6rem;
+  padding: 0 4.6rem;
+}
+
+.logo {
+  height: 2.2rem;
+}
+
+.main-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+  list-style: none;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #cf711f;
+}
+
+/* hero section */
 .section-hero {
   background-color: #fdf2e9;
-  padding: 9.6rem 0;
+  padding: 4.8rem 0 9.6rem 0;
 }
 
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 9.6rem;
   align-items: center;
+  gap: 9.6rem;
   max-width: 130rem;
   margin: 0 auto;
-}
-
-.heading-primary {
-  font-size: 5.2rem;
-  font-weight: 700;
-  line-height: 1.05;
-  color: #333;
-  letter-spacing: -0.5px;
-  margin-bottom: 3.2rem;
+  padding: 0 3.2rem;
 }
 
 
@@ -47,39 +88,6 @@ body {
   margin-bottom: 4.8rem;
 }
 
-.btn:link,
-.btn:visited {
-  display: inline-block;
-  font-size: 2rem;
-  text-decoration: none;
-  font-weight: 600;
-  padding: 1.6rem 3.2rem;
-  border-radius: 9px;
-  transition: all 0.3s;
-}
-
-.btn-full:link,
-.btn-full:visited {
-  background-color: #e67e22;
-  color: #fff;
-}
-
-.btn-full:hover,
-.btn-full:active {
-  background-color: #cf711f;
-}
-
-.btn-outline:link,
-.btn-outline:visited {
-  background-color: #fff;
-  color: #555;
-}
-
-.btn-outline:hover,
-.btn-outline:active {
-  background-color: #fdf2e9;
-  box-shadow: inset 0 0 0 3px #fff;
-}
 
 .hero-img {
   width: 100%;
@@ -121,4 +129,47 @@ body {
 /* general classes */ 
 .margin-right-sm {
   margin-right: 1.6rem;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  transition: all 0.3s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.btn-full:hover,
+.btn-full:active {
+  background-color: #cf711f;
+}
+
+.btn-outline:link,
+.btn-outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn-outline:hover,
+.btn-outline:active {
+  background-color: #fdf2e9;
+  box-shadow: inset 0 0 0 3px #fff;
 }
